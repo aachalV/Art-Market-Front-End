@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Artworks </title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<style type="text/css">
+  		.bg{
+			background-image: linear-gradient(rgba(255,255,0,0.2),rgba(255,0,255,0.5),rgba(0,0,255,0.5),rgba(0,255,128,0.5));
+		}
+		.fa {
+		  font-size: 25px;
+		  cursor: pointer;
+		  user-select: none;
+		  color: red;
+		}
+		
+		.card{
+			transition: all 1.5s ease;
+		}
+		.card:hover {
+			transform: scale(1.05);
+		}
+  	</style>
+</head>
+<body class="bg">
+
+<!-- NAVBAR -->
+	<nav class="navbar ">
+      	<!-- Brand/logo -->
+      	<a class="navbar-brand" href="#">
+        	<img src="images/icon.jpg" alt="logo" style="width:40px;">
+      	</a>
+      	<!-- Nav buttons -->
+      	<div class="justify-content-end">
+          	<div class="btn-group">
+            	<button type="button" class="btn btn-primary" >Home</button>
+          	</div>
+          	<div class="btn-group">
+            	<button type="button" class="btn btn-primary">About Us</button>
+          	</div>
+          	<div class="btn-group">
+            	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Menu</button>
+            <div class="dropdown-menu">
+              	<a class="dropdown-item" href="#">Contact</a>
+              	<a class="dropdown-item" href="#">Email</a>
+              	<a class="dropdown-item" href="#">SignUp</a>
+              	<a class="dropdown-item" href="#">SignIn</a>
+            </div>
+          	</div>
+          	<div class="btn-group">
+              	<button type="button" class="btn btn-primary"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#FFFFFF" d="M10,0V4H8L12,8L16,4H14V0M1,2V4H3L6.6,11.59L5.25,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42C7.29,15 7.17,14.89 7.17,14.75L7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.59 17.3,11.97L21.16,4.96L19.42,4H19.41L18.31,6L15.55,11H8.53L8.4,10.73L6.16,6L5.21,4L4.27,2M7,18A2,2 0 0,0 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20A2,2 0 0,0 7,18M17,18A2,2 0 0,0 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20A2,2 0 0,0 17,18Z" />
+                </svg>
+              	</button>
+          	</div>
+      	</div>
+    	<!--//Nav buttons -->
+    </nav>
+<!-- //NAVBAR -->
+
+<!-- ARTWORKS -->
+    <!-- ROW1 -->
+    <div class="card-deck" style="margin: 25px;">
+		<div class="card shadow">
+			<div class="card-header">
+				<h6 style="float: left; font-size: 25px; font-family: Times New Roman;"> Auction </h6>
+
+				<i onclick="heartToggle(this)" class="fa fa-heart-o" style="float: right;"></i>
+							<p style="float: right;">&nbsp;&nbsp;</p>
+				<i onclick="thumbToggle(this)" class="fa fa-thumbs-o-up" style="float: right; color: blue;"></i>
+
+			</div>
+		    <img src="images/art1.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<h5 class="card-title">Artwork Name</h5>
+		      	<p class="card-text">Description of the uplaoded artork.</p>
+		      	<h6 class="card-text">Artist Name</h6>
+		      	<h6 class="card-text">Base price</h6>
+		      	<button class="btn btn-primary"><i class="fa fa-lock" style="color: white; font-size: 16px;"></i> &nbsp; Bid On This </button>
+
+		      	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		    </div>
+		</div>
+  		<div class="card shadow">
+  			<div class="card-header">
+				<h6 style="float: left; font-size: 25px; font-family: Times New Roman;"> Normal Sale </h6>
+
+				<i onclick="heartToggle(this)" class="fa fa-heart-o" style="float: right;"></i>
+							<p style="float: right;">&nbsp;&nbsp;</p>
+				<i onclick="thumbToggle(this)" class="fa fa-thumbs-o-up" style="float: right; color: blue;"></i>
+
+			</div>
+		    <img src="images/art2.jpg" class="card-img-top" alt="..." height="255px">
+			<div class="card-body">
+			    <h5 class="card-title">Artwork Name</h5>
+			    <p class="card-text">Description of the uplaoded artork.</p>
+			    <h6 class="card-text">Artist Name</h6>
+			    <h6 class="card-text">Base price</h6>
+			    <h6 class="card-text">Artist Demand </h6>
+			    <button class="btn btn-success" style="margin-bottom: 5px;"><i class="fa fa-check-square-o" style="color: white; font-size: 16px;"></i> &nbsp; Buy Now &nbsp;&nbsp;&nbsp;</button><br>
+			    <button class="btn btn-primary" style="margin-bottom: 5px;"><i class="fa fa-cart-plus" style="color: white; font-size: 16px;"></i> &nbsp; Add to cart </button><br>
+				<button class="btn btn-info" style="margin-bottom: 5px;"><i class="fa fa-handshake-o" style="color: white; font-size: 16px;"></i> &nbsp; Bargain &nbsp;&nbsp;&nbsp;&nbsp;</button><br>
+			    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			</div>
+  		</div>
+		<div class="card shadow">
+			<div class="card-header">
+				<h6 style="float: left; font-size: 25px; font-family: Times New Roman;"> Auction </h6>
+
+				<i onclick="heartToggle(this)" class="fa fa-heart-o" style="float: right;"></i>
+							<p style="float: right;">&nbsp;&nbsp;</p>
+				<i onclick="thumbToggle(this)" class="fa fa-thumbs-o-up" style="float: right; color: blue;"></i>
+
+			</div>
+		    <img src="images/art3.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<h5 class="card-title">Artwork Name</h5>
+		      	<p class="card-text">Description of the uplaoded artork.</p>
+		      	<h6 class="card-text">Artist Name</h6>
+		      	<h6 class="card-text">Base price</h6>
+		      	<button class="btn btn-primary"><i class="fa fa-lock" style="color: white; font-size: 16px;"></i> &nbsp; Bid On This </button>
+
+		      	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		    </div>
+		</div>
+	</div>
+	<!-- //ROW! -->
+	<!-- ROW2 -->
+    <div class="card-deck" style="margin: 25px;">
+		<div class="card shadow">
+			<div class="card-header">
+				<h6 style="float: left; font-size: 25px; font-family: Times New Roman;"> Normal Sale </h6>
+
+				<i onclick="heartToggle(this)" class="fa fa-heart-o" style="float: right;"></i>
+							<p style="float: right;">&nbsp;&nbsp;</p>
+				<i onclick="thumbToggle(this)" class="fa fa-thumbs-o-up" style="float: right; color: blue;"></i>
+
+			</div>
+		    <img src="images/art4.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<h5 class="card-title">Artwork Name</h5>
+		      	<p class="card-text">Description of the uplaoded artork.</p>
+		      	<h6 class="card-text">Artist Name</h6>
+		      	<h6 class="card-text">Base price</h6>
+		      	<h6 class="card-text">Artist Demand </h6>
+			    <button class="btn btn-success" style="margin-bottom: 5px;"><i class="fa fa-check-square-o" style="color: white; font-size: 16px;"></i> &nbsp; Buy Now &nbsp;&nbsp;&nbsp;</button><br>
+			    <button class="btn btn-primary" style="margin-bottom: 5px;"><i class="fa fa-cart-plus" style="color: white; font-size: 16px;"></i> &nbsp; Add to cart </button><br>
+				<button class="btn btn-info" style="margin-bottom: 5px;"><i class="fa fa-handshake-o" style="color: white; font-size: 16px;"></i> &nbsp; Bargain &nbsp;&nbsp;&nbsp;&nbsp;</button><br>
+
+		      	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		    </div>
+		</div>
+  		<div class="card shadow">
+  			<div class="card-header">
+				<h6 style="float: left; font-size: 25px; font-family: Times New Roman;"> Auction </h6>
+
+				<i onclick="heartToggle(this)" class="fa fa-heart-o" style="float: right;"></i>
+							<p style="float: right;">&nbsp;&nbsp;</p>
+				<i onclick="thumbToggle(this)" class="fa fa-thumbs-o-up" style="float: right; color: blue;"></i>
+
+			</div>
+		    <img src="images/art5.jpg" class="card-img-top" alt="..." height="255px">
+			<div class="card-body">
+			    <h5 class="card-title">Artwork Name</h5>
+			    <p class="card-text">Description of the uplaoded artork.</p>
+			    <h6 class="card-text">Artist Name</h6>
+			    <h6 class="card-text">Base price</h6>
+			    <button class="btn btn-primary"><i class="fa fa-lock" style="color: white; font-size: 16px;"></i> &nbsp; Bid On This </button>
+
+			    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			</div>
+  		</div>
+		<div class="card shadow">
+			<div class="card-header">
+				<h6 style="float: left; font-size: 25px; font-family: Times New Roman;"> Normal Sale </h6>
+
+				<i onclick="heartToggle(this)" class="fa fa-heart-o" style="float: right;"></i>
+							<p style="float: right;">&nbsp;&nbsp;</p>
+				<i onclick="thumbToggle(this)" class="fa fa-thumbs-o-up" style="float: right; color: blue;"></i>
+
+			</div>
+		    <img src="images/art6.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<h5 class="card-title">Artwork Name</h5>
+		      	<p class="card-text">Description of the uplaoded artork.</p>
+		      	<h6 class="card-text">Artist Name</h6>
+		      	<h6 class="card-text">Base price</h6>
+		      	<h6 class="card-text">Artist Demand </h6>
+			    <button class="btn btn-success" style="margin-bottom: 5px;"><i class="fa fa-check-square-o" style="color: white; font-size: 16px;"></i> &nbsp; Buy Now &nbsp;&nbsp;&nbsp;</button><br>
+			    <button class="btn btn-primary" style="margin-bottom: 5px;"><i class="fa fa-cart-plus" style="color: white; font-size: 16px;"></i> &nbsp; Add to cart </button><br>
+				<button class="btn btn-info" style="margin-bottom: 5px;"><i class="fa fa-handshake-o" style="color: white; font-size: 16px;"></i> &nbsp; Bargain &nbsp;&nbsp;&nbsp;&nbsp;</button><br>
+
+		      	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		    </div>
+		</div>
+	</div>
+	<!-- END ROW2 -->
+	<!-- ROW3 -->
+    <div class="card-deck" style="margin: 25px;">
+		<div class="card shadow">
+			<div class="card-header">
+				<h6 style="float: left; font-size: 25px; font-family: Times New Roman;"> Auction </h6>
+
+				<i onclick="heartToggle(this)" class="fa fa-heart-o" style="float: right;"></i>
+							<p style="float: right;">&nbsp;&nbsp;</p>
+				<i onclick="thumbToggle(this)" class="fa fa-thumbs-o-up" style="float: right; color: blue;"></i>
+
+			</div>
+		    <img src="images/art7.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<h5 class="card-title">Artwork Name</h5>
+		      	<p class="card-text">Description of the uplaoded artork.</p>
+		      	<h6 class="card-text">Artist Name</h6>
+		      	<h6 class="card-text">Base price</h6>
+		      	<button class="btn btn-primary"><i class="fa fa-lock" style="color: white; font-size: 16px;"></i> &nbsp; Bid On This </button>
+
+		      	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		    </div>
+		</div>
+  		<div class="card shadow">
+  			<div class="card-header">
+				<h6 style="float: left; font-size: 25px; font-family: Times New Roman;"> Normal Sale </h6>
+
+				<i onclick="heartToggle(this)" class="fa fa-heart-o" style="float: right;"></i>
+							<p style="float: right;">&nbsp;&nbsp;</p>
+				<i onclick="thumbToggle(this)" class="fa fa-thumbs-o-up" style="float: right; color: blue;"></i>
+
+			</div>
+		    <img src="images/art8.jpg" class="card-img-top" alt="..." height="255px">
+			<div class="card-body">
+			    <h5 class="card-title">Artwork Name</h5>
+			    <p class="card-text">Description of the uplaoded artork.</p>
+			    <h6 class="card-text">Artist Name</h6>
+			    <h6 class="card-text">Base price</h6>
+			    <h6 class="card-text">Artist Demand </h6>
+			    <button class="btn btn-success" style="margin-bottom: 5px;"><i class="fa fa-check-square-o" style="color: white; font-size: 16px;"></i> &nbsp; Buy Now &nbsp;&nbsp;&nbsp;</button><br>
+			    <button class="btn btn-primary" style="margin-bottom: 5px;"><i class="fa fa-cart-plus" style="color: white; font-size: 16px;"></i> &nbsp; Add to cart </button><br>
+				<button class="btn btn-info" style="margin-bottom: 5px;"><i class="fa fa-handshake-o" style="color: white; font-size: 16px;"></i> &nbsp; Bargain &nbsp;&nbsp;&nbsp;&nbsp;</button><br>
+
+			    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			</div>
+  		</div>
+		<div class="card shadow">
+			<div class="card-header">
+				<h6 style="float: left; font-size: 25px; font-family: Times New Roman;"> Auction </h6>
+
+				<i onclick="heartToggle(this)" class="fa fa-heart-o" style="float: right;"></i>
+							<p style="float: right;">&nbsp;&nbsp;</p>
+				<i onclick="thumbToggle(this)" class="fa fa-thumbs-o-up" style="float: right; color: blue;"></i>
+
+			</div>
+		    <img src="images/art9.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<h5 class="card-title">Artwork Name</h5>
+		      	<p class="card-text">Description of the uplaoded artork.</p>
+		      	<h6 class="card-text">Artist Name</h6>
+		      	<h6 class="card-text">Base price</h6>
+		      	<button class="btn btn-primary"><i class="fa fa-lock" style="color: white; font-size: 16px;"></i> &nbsp; Bid On This </button>
+
+		      	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		    </div>
+		</div>
+	</div>
+	<!-- //ROW3 -->
+<!-- //ARTWORKS -->
+
+<!-- Like/Favourite Toggle -->
+	<script>
+		function heartToggle(x) {
+  				x.classList.toggle("fa-heartbeat");
+		}
+		function thumbToggle(x){
+			x.classList.toggle("fa-thumbs-up");
+		}
+	</script>
+<!-- //Like/Favourite Toggle -->
+
+</body>
+</html>

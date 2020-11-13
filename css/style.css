@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+#particles-js{
+	background-color: #233140;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.welcome{
+	margin-left: 25%;
+	position: absolute;
+	font-family: sans-serif;
+	margin-top: 15%;
+	background-color: #EDF093;
+	padding: 10px;
+	border-radius: 25px;
+}
+.welcome h1{
+	letter-spacing: 2px;
+	font-size: 42px;
+	text-transform: uppercase;
+}
+.welcome p{
+	font-size: 16px;
+	margin-top: 25px;
+	font-family: monospace;
+}
+
+/* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 35rem;
+  }
+
+ /* Centered text */
+.centered {
+	padding: 10px;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	border-radius: 25px;
+}
+
+.bg{
+	background-image: url("images/art1.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
